@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="icon" href="project img/sm1.png" type="image/x-image">
+</head>
+<style>
+    h1{
+        color: whitesmoke;
+        margin-top: 2em;
+        text-align: center;
+        font-size: 3em;
+    }
+    #boxflexing{
+        display: flex;
+    }
+    fieldset, #conatct{
+        margin-left: 3em;
+        padding: 20px;
+        width: 25%;
+        font-size: 1.2rem;
+    }
+    textarea{
+        background-color: rgba(0, 0, 0, 0.625);
+        color: whitesmoke;
+        border: 1px solid white;
+        border-radius: 10px;
+        
+        font-size: 1rem;
+    }
+    #name, #email{
+        background-color: black;
+        border: 1px solid white;
+        border-radius: 10px;
+        width: 200px;
+        height: 30px;
+        padding: 5px;
+        font-size: 1rem;
+    }
+    #contact{
+        height: 350px;
+        width: 28%;
+        padding-left: 290px;
+        padding-top: 60px;
+        border-radius: 50%;
+    }
+    #cont{
+        width: 40px;
+        height: 40px;
+
+    }
+    #calldetails{
+        font-size: 20px;
+        position: absolute;
+        top: 167%;
+        bottom: 0px;
+    }
+</style>
+<body>
+    <div id="nav">
+        <nav>
+          <a href="#"
+            ><img
+              src="project img/sm2.png"
+              id="image"
+              width="60px"
+              height="40"
+              alt="no img"
+          /></a>
+          <a href="project.html">About</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <h1>Contact us</h1><br><br>
+      <div id="boxflexing">
+        <fieldset>
+            <legend>your details</legend>
+            <form action="">
+                <br>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Enter name" autofocus autocomplete="on" required>
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="text" email="email" id="email" placeholder="Enter email" autocomplete="on" required> <br><br>
+                <label for="issue">Your issue:</label><br> 
+                <input type="checkbox"> Design issue <br>
+                <input type="checkbox"> Layout issue <br>
+                <input type="checkbox"> Info issue <br>
+                <input type="checkbox"> Copyright issue <br><br>
+                <label for=" Info about issue">msg:</label><br>
+                <textarea name="message" id="message" placeholder="enter your msg" cols="50" rows="6"></textarea><br><br>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+               </form>
+        </fieldset>
+        <img id="contact" src="project img/contact.jpeg" alt="">
+      </div>
+      <h1>Our details</h1>
+      <div style="display: flex; justify-content: center;"> 
+        <img src="project img/call.png" alt="no img" id="cont">
+        <p id="calldetails">Call us : +91XXXXXXXXXX</p>
+      </div>
+</body>
+</html>
